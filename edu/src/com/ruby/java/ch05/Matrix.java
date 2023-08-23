@@ -23,8 +23,8 @@ public class Matrix {
 		int [][]E = new int[3][5];
 		for (int i = 0; i < E.length; i++) {
 			for (int j = 0; j < E[0].length; j++) {
-				for (int k = 0; k < E[0].length; k++) {
-					E[i][j] = A[i][k] * D[k][j];
+				for (int k = 0; k < E.length; k++) {
+					E[i][j] += A[i][k] * D[k][j];
 				}
 			}
 		}
